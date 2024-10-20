@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE PRODUCTO</title>
+</head>
+<body>
+    <H1>REGISTRO DE PRODUCTO</H1>
+    <form action="{{ url_for('registro_productos') }}" method="POST">
+        <label for="PRODUCTO"> PRODUCTO:</label>
+        <input type="text" name="PRODUCTO"> <br>
+
+        <label for="categoria">categoria</label>
+        <select name="categoria" required> <br>
+            <option value="frutas">frutas:</option>
+            <option value="vegetales">vegetales:</option>
+            <option value="carnes">carnes:</option>
+            <option value="moluscos">moluscos:</option>
+            <option value="lacteos">lacteos:</option>
+        </select> <br>
+
+        <label for="existencia">existencia:</label>
+        <input type="text" name="existencia"> <br>
+        
+        <label for="precio">precio:</label>
+        <input type="number" name="precio"> <br> 
+
+
+        <input type="submit" >
+
+    </form>
+
+</body>
+</html>
